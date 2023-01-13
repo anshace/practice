@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(174, 255, 198);    
+    /* background-image:url("../Images/arch.jpg"); */
+    background-size:cover;
+    /* background-attachment: fixed; */
+    /* color: white; */
+}
+
+.name{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3cm;
+    color: grey;
+}
+.profile-pic{
+    height: 18rem;
+    padding: 1rem 1rem 1rem 10rem;
+    align-content: flex-end;
+}
+hr {
+    border-top: 3px grey solid;
+}
+
+footer{
+    text-align: right;
+}
+
+#textabout{
+    text-align: justify;
+}

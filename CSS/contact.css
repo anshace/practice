@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(252, 208, 128);
+    
+}
+a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+pre
+{
+    text-emphasis:inherit;
+}
