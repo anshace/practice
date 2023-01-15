@@ -1,30 +1,76 @@
-body{
-    background-color: rgb(174, 255, 198);    
-    /* background-image:url("../Images/arch.jpg"); */
-    background-size:cover;
+body {
     /* background-attachment: fixed; */
-    /* color: white; */
+    background-color:#E3F6FF;
+    color: #252A34;
 }
 
-.name{
+.name {
     text-align: center;
     text-decoration: underline;
     text-shadow: 3cm;
-    color: grey;
+    color:#45969b;
 }
-.profile-pic{
+h3{
+    color:#f96d15;
+}
+.profile-pic {
     height: 18rem;
     padding: 1rem 1rem 1rem 10rem;
     align-content: flex-end;
 }
+
 hr {
-    border-top: 3px grey solid;
+    border-top: 3px #252A34 solid;
 }
 
-footer{
+footer {
     text-align: right;
+    
+
 }
 
-#textabout{
+#textabout {
     text-align: justify;
+}
+a{
+    color: #112D4E;
+}
+a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+.right{
+    padding:  0px 80px;
+}
+
+
+label.info{
+    display: inline-block;
+    width: 200px;
+    padding: 3px 0px;
+}
+.data{
+    width: 300px;
+    display:inline-block;
+}
+legend{
+    text-align: center;
+}
+fieldset{
+    background-color:#9DF1DF;
+}
+
+.infoleft{
+    display: flex;
+    width: 1000px;
+}
+.complain{
+    margin-top: 0px;
+}
+button{
+    margin: 0px 50%;
 }

@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/Style.css">
 </head>
+
 <body>
-    <h1>My Contact Details</h1>
+    <h1 class='name'>My Contact Details</h1>
     <address>
         <p>Name:&emsp;Ansh Roshan</p>
-        <p>Addresss:-&emsp;<a href="https://www.google.com/maps/place/Bhagalpur,+Bihar/">Bhagalpur,Bihar,India</a><br></p>
+        <p>Addresss:-&emsp;<a href="https://www.google.com/maps/place/Bhagalpur,+Bihar/">Bhagalpur,Bihar,India</a><br>
+        </p>
         <p>Contact:-&emsp;<a href="tel:+">+91-xxx-xxx-xx87</a></p>
-        <p>Email:- &emsp;<a href="mailto:anshace@duck.com">anshace@duck.com</a></p>        
+        <p>Email:- &emsp;<a href="mailto:anshace@duck.com">anshace@duck.com</a></p>
     </address>
     <form action="mailto:anshace@duck.com" method="post">
         <fieldset>
-            <div>
-                <div>
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name">
+            <legend>Your Details:</legend>
+            <div class="infoleft">
+                <div >
+                    <label class="info" for="name">Your Name:</label>
+                    <input class="data" type="text" name="name" id="name">
+                    <label class="info" for="roll">Roll Number:</label>
+                    <input class="data" type="number" name="roll" id="roll">
+                    <label class="info" for="branch">Engineering Branch:</label>
+                    <!-- <select class="data" id="branch    " name="branch"> -->
+                    <input  class="data" list="branch">
+                    <datalist id="branch">
+                        <option value="electrical" selected>Electrical Engineering</option>
+                        <option value="electronic">Electronics Engineering</option>
+                        <option value="coputer">Computer science Engineering</option>
+                        <option value="mechanical">Mechanical Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                    </datalist>
+                    </select>
+                    <label class="info" for="reg">Registration Number:</label>
+                    <input class="data" type="number" name="reg" id="reg">
+                    <label class="info" for="mail">Email Address:</label>
+                    <input class="data" type="email" name="mail" id="mail">
+                        <p>Gender: </p>
+                        <label for="sex"><input type="radio" name="sex"> Male</label>
+                        <label for="sex"><input type="radio" name="sex"> Female</label>
+                        <label for="sex"><input type="radio" name="sex"> Prefer not to Say</label>
                 </div>
                 <div>
-                    <label for="roll">Roll Number:</label>
-                    <input type="number" name="roll" id="roll">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="reg">Registration Number:</label>
-                    <input type="number" name="reg" id="reg">
+                    <div>
+                    </div>
+    
                 </div>
                 <div>
-                    <label for="mail">Email Address:</label>
-                    <input type="email" name="mail" id="mail">
+                    <label for="complain">
+                        <p class="complain">Your Subject</p>
+                    </label>
+    
+                    <textarea name="complain" id="" cols="40" rows="10"></textarea>
                 </div>
-            </div>
-            <div>
-                <p>Gender:  </p>   
-                <label for="sex"><input type="radio" name="sex"> Male</label>
-                <label for="sex"><input type="radio" name="sex"> Female</label>
-                <label for="sex"><input type="radio" name="sex"> Prefer not to Say</label>
-            </div>
-            <div>
-                <label for="complain">Your Subject</label>
-
-                <textarea name="complain" id="" cols="30" rows="10"></textarea>
             </div>
             <button type="submit">Submit</button>
+            
         </fieldset>
-        
+
     </form>
 </body>
+
 </html>
