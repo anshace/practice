@@ -1,0 +1,57 @@
+body {
+    /* background-attachment: fixed; */
+    background-color: #E3F6FF;
+    color: #252A34;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.name {
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3cm;
+    color: #45969b;
+}
+
+h3 {
+    color: #f96d15;
+}
+
+.profile-pic {
+    height: 18rem;
+    padding: 1rem 1rem 1rem 10rem;
+    align-content: flex-end;
+}
+
+hr {
+    border-top: 3px #252A34 solid;
+}
+
+footer {
+    text-align: right;
+
+
+}
+
+.psystem{
+    display: flex;
+    justify-content: space-between;
+}
+/* .name{
+    display: inline-block;
+    width: 20px;
+} */
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .detail input{
+    width: auto;
+} */
+
+.detail div:nth-of-type(1) input
+{
+    width: auto;
+}

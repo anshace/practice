@@ -1,0 +1,62 @@
+body {
+    /* background-attachment: fixed; */
+    background-color: #E3F6FF;
+    color: #252A34;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+#textabout {
+    text-align: justify;
+}
+
+a {
+    color: #112D4E;
+}
+
+a[href^='mailto']::before {
+    content: '📧 ';
+}
+
+a[href^='tel']::before {
+    content: '📞 ';
+}
+
+.right {
+    padding: 0px 80px;
+}
+
+
+label.info {
+    display: inline-block;
+    width: 200px;
+    padding: 3px 0px;
+}
+
+.data {
+    width: 300px;
+    display: inline-block;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    background-color: #9DF1DF;
+
+}
+
+.infoleft {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+.complain {
+    margin-top: 0px;
+}
+
+button {
+    margin: 0px 50%;
+}
