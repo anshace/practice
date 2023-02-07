@@ -5,19 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <div>
-      <p>Hello</p>
-      <p>Good</p>
-    </div>
-    <div>
-      <p>Everyone</p>
-      <p>Morning</p>
-    </div>
+    <style>
+      div > div {
+        margin-left: 30px;
+        padding-left: 10px;
+        border-left: solid black 5px;
+      }
+      div {
+        color: #000;
+      }
+    </style>
     <!--  Basic Code -->
     <!-- <script src="script.js"></script> -->
     <!-- <script src="Variables.js"></script> -->
-    <script src="Functions.js"></script>
+    <!-- <script src="Functions.js"></script> -->
+    <!-- <script defer src="event.js"></script> -->
+    <!-- <script defer src="Dom.js"></script> -->
+    <script defer src="ControlFlow.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <p>Hello</p>
+      <p>Everyone</p>
+    </div>
+
+    <!-- event listener -->
+    <form data-form>
+      <input data-input type="text" />
+      <button data-btn>Click ME</button>
+    </form>
+    <a href="http://www.google.com">google</a>
+
+    <!-- Dom Transversal -->
+    <div class="grandpa" id="grandpa">
+      Grand Father
+      <div id="dad">
+        Father
+        <div id="boychild">boy</div>
+        <div class="girlchild">Sister</div>
+      </div>
+
+      <div id="uncle">
+        Uncle
+        <div class="boycousin">Cousin bro</div>
+        <div class="girlcousin">Cousin sis</div>
+      </div>
+    </div>
   </body>
 </html>
